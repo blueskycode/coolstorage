@@ -14,6 +14,8 @@
     <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -97,9 +99,10 @@
     <Folder Include="Source\Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Vici.Core.PCL">
-      <HintPath>..\References\Vici.Core.PCL.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\ViciCore\Library\Vici.Core.PCL.csproj">
+      <Project>{F3DF58D7-69AD-49F6-838F-6BDF02D3886A}</Project>
+      <Name>Vici.Core.PCL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
